@@ -79,6 +79,11 @@ heights_no_na[heights_no_na >67]
 length(heights_no_na[heights_no_na >67])
 sum(heights_no_na >67)
 #summing turns it into logical and since true is =1 then it will be 2 without having to know length
+download.file(url = "https://ndownloader.figshare.com/files/2292169",
+              destfile = "data_raw/portal_data_joined.csv")
 
+#located in dataraw folder that we created
+#we need to read it into R however
 
+library(tidyverse)
 
